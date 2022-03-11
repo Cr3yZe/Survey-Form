@@ -40,6 +40,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   gap: 20px;
+  color: var(--submit-btn-color);
 }
 
 .form-card {
