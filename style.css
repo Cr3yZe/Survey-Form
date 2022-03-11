@@ -88,6 +88,11 @@ body {
   gap: 9px;
 }
 
+.radio-question input[type="radio"] {
+  width: 30px;  
+  transform: scale(1.4);
+}
+
 .div-check {
   display: flex;
   flex-direction: column;
@@ -103,6 +108,11 @@ body {
 
 .div-check > div {
   margin-bottom: 12px;
+}
+
+.div-check > div input[type="checkbox"] {
+    width: 30px;
+    transform: scale(1.4);
 }
 
 #survey-form > select {
