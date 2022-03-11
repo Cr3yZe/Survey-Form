@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #4F4F8C;
+  --font: 'Montserrat', sans-serif;
+  --form-background-color: rgba(40, 40, 70, 0.7);
+  --submit-btn-color: #37af65;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font);
+  font-size: clamp(.8em, 2vw, 1em);
+  color: #FFF;
+}
+
+.container {
+  margin: 40px 0 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+#title {
+  min-width: 90%;
+  max-width: 90%;
+  margin-bottom: 20px;
+  font-size: clamp(.8em, 2vw, 2em);
+  text-align: center;
+  font-weight: 500;
+/*   line-height: 30px; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-card {
+  max-width: 100%;
+  background-color: var(--form-background-color);
+/*   border-radius: 9px; */
+  padding: 2rem;
+}
+
+#survey-form {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: .1em;
+}
+
+#name {
+  margin-bottom: 10px;
+}
+
+#email {
+  margin-bottom: 10px;
+}
+
+#number {
+  margin-bottom: 10px;
+}
+
+#survey-form > input {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: var(--font);
+  font-weight: 700;
+}
+
+#dropdown {
+  margin-bottom: 10px;
+}
+
+.radio-question {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.div-check {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-check > p {
+  margin-bottom: 10px;
+}
+
+.div-check > input {
+  justify-self: start;
+}
+
+.div-check > div {
+  margin-bottom: 12px;
+}
+
+#survey-form > select {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: var(--font);
+  font-weight: 700;
+}
+
+
+#text {
+  max-width: 90%;
+  border: none;
+  border-radius: 3px;
+  margin-top: 30px;
+  align-self: center;
+  padding: 1rem;
+}
+
+#submit-btn {
+  margin-top: 30px;
+  background-color: var(--submit-btn-color);
+    color: #FFF;
+}
+
+@media (min-width: 450px) {
+  .form-card {
+    max-width: 80%;
+    border-radius: 9px;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 70%;
+  }
+}
